@@ -1,0 +1,103 @@
+/* HEADER */
+/*
+#4654A3
+#270949  
+#456CAC
+#240A40
+3f7fa1
+*/
+header {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  top: 0;
+  z-index: 200;
+}
+header .inner {
+  height: 120px;
+  background-color: orange;
+}
+
+header .inner #headup {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+header .inner #headup ul {
+  display: flex;
+  width: 400px;
+  align-items: baseline;
+  justify-content: space-around;
+}
+header .inner #headup ul li {
+  font-weight: bold;
+  color: #270949;
+}
+header .inner #headup ul li #reg {
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+header .inner #headup ul li #reg:hover {
+  background-color: rgba(39, 9, 73, 0.2);
+}
+header .inner #headup ul li #login {
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+header .inner #headup ul li #login:hover {
+  background-color: rgba(39, 9, 73, 0.2);
+}
+
+header .inner #headup ul li #join {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #270949;
+  transition: all 0.5s;
+}
+header .inner #headup ul li #join:hover {
+  background-color: #fff;
+  color: #3f7fa1;
+}
+
+header .inner > #headup > #logo > a > img {
+  width: 130px;
+}
+
+header .inner #headup #search {
+  position: absolute;
+  right: 400px;
+}
+
+header .inner #headup #search input::placeholder {
+  color: #999;
+}
+
+header .inner #headup #search input {
+  width: 260px;
+  padding: 10px;
+  outline: none;
+  color: rgb(70, 84, 163);
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 40px;
+  border: 1px solid #999;
+  transition: all 0.3s;
+}
+
+header .inner #headup #search i {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+
+header .inner #headup #search input:focus {
+  width: 320px;
+  border: 1px solid #3f7fa1;
+}
