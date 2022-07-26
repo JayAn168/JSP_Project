@@ -29,61 +29,136 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="inner">
-        <div id="headup">
-          <div id="logo">
-            <a href="./index.html">
-              <img src="./img/logo.png" alt="Set The Table" />
-            </a>
+    <div class="wrapper">
+      <header>
+        <div class="inner">
+          <div id="headup">
+            <div id="logo">
+              <a href="./index.html">
+                <img src="./img/logo.png" alt="Set The Table" />
+              </a>
+            </div>
+            <div id="search">
+              <form action="javascript:void(0)" method="post" name="searchForm">
+                <input
+                  type="text"
+                  name="search"
+                  id="headSearch"
+                  placeholder="서비스, 쉐프를 검색해 보세요!"
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+            </div>
+            <ul>
+              <li>
+                <div id="reg">
+                  <a href="javascript:void(0)">전문가 등록</a>
+                </div>
+              </li>
+              <li>
+                <div id="login">
+                  <a href="javascript:void(0)">로그인</a>
+                </div>
+              </li>
+              <li>
+                <div id="join">
+                  <a href="javascript:void(0)">무료 회원가입</a>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div id="search">
-            <form action="javascript:void(0)" method="post" name="searchForm">
-              <input
-                type="text"
-                name="search"
-                id="headSearch"
-                placeholder="서비스, 쉐프를 검색해 보세요!"
-              />
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </form>
+          <div id="headdown">
+            <div>
+              <a href="" id="allcategory">
+                <i class="fa-solid fa-bars"></i>
+                <div>전체 카테고리</div>
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="displayNone1">
+                <li>비즈니스</li>
+                <li>
+                  <a href="">
+                    IT∙프로그래밍
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    >디자인 <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    >영상∙사진∙음향 <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    >마케팅 <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    >번역∙통역 <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    >문서∙글쓰기 <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    >비즈니스컨설팅 <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    >주문제작 <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href=""
+                    >세무∙법무∙노무 <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div id="sub_menu">
+              <div id="sub_item1">
+                <a href="">프라임</a>
+                <div></div>
+              </div>
+              <div id="sub_item2">
+                <a href="">엔터프라이즈</a>
+                <div></div>
+              </div>
+              <div id="sub_item3">
+                <a href="">코드리뷰</a>
+                <div></div>
+              </div>
+            </div>
+            <div id="pj">
+              <a href="">
+                원하는 서비스를 못 찾겠다면, <b>프로젝트 의뢰</b>하세요!
+              </a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
           </div>
-          <ul>
-            <li>
-              <div id="reg">
-                <a href="javascript:void(0)">전문가 등록</a>
-              </div>
-            </li>
-            <li>
-              <div id="login">
-                <a href="javascript:void(0)">로그인</a>
-              </div>
-            </li>
-            <li>
-              <div id="join">
-                <a href="javascript:void(0)">무료 회원가입</a>
-              </div>
-            </li>
-          </ul>
         </div>
-        <div id="headdown">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <!-- SWIPER_AD -->
-    <!-- CATEGORY -->
-    <!-- FAVORITE -->
-    <!-- COUPON -->
-    <!-- REQUEST_PROJECT -->
-    <!-- RANKING -->
-    <!-- REGISTER_CHEF -->
-    <!-- FOOTER -->
-    <footer></footer>
+      </header>
+      <!-- SWIPER_AD -->
+      <section id="swiper_ad">
+        <div class="inner"></div>
+      </section>
+      <!-- CATEGORY -->
+      <!-- FAVORITE -->
+      <!-- COUPON -->
+      <!-- REQUEST_PROJECT -->
+      <!-- RANKING -->
+      <!-- REGISTER_CHEF -->
+      <!-- FOOTER -->
+      <footer></footer>
+    </div>
   </body>
 </html>

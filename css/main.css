@@ -6,17 +6,21 @@
 #240A40
 3f7fa1
 */
+.wrapper {
+  position: relative;
+}
 header {
   width: 100%;
-  height: 200px;
+  height: 120px;
   background-color: rgba(255, 255, 255, 0.85);
   position: fixed;
   top: 0;
   z-index: 200;
+  border-bottom: 0.5px solid rgba(63, 127, 161, 0.2);
 }
+
 header .inner {
   height: 120px;
-  background-color: orange;
 }
 
 header .inner #headup {
@@ -61,7 +65,7 @@ header .inner #headup ul li #join {
   transition: all 0.5s;
 }
 header .inner #headup ul li #join:hover {
-  background-color: #fff;
+  background-color: rgba(39, 9, 73, 0.2);
   color: #3f7fa1;
 }
 
@@ -100,4 +104,164 @@ header .inner #headup #search i {
 header .inner #headup #search input:focus {
   width: 320px;
   border: 1px solid #3f7fa1;
+}
+
+#headdown {
+  display: flex;
+  align-items: baseline;
+  margin-top: 3px;
+  color: #270949;
+}
+#headdown #allcategory::before {
+  content: "";
+  position: absolute;
+  background-color: #3f7fa1;
+  height: 3px; /*밑줄 굵기*/
+
+  width: 0; /*초기에 보이지 않도록*/
+  bottom: 0; /*a태그 아래에 위치시키기*/
+  transition: 0.7s; /*애니메이션 동작 실행 시간 정의*/
+
+  /*가상 요소를 가운데로 이동시키기*/
+  left: 7%;
+  transform: translateX(-50%);
+}
+#headdown #allcategory:hover:before {
+  width: 150px;
+}
+
+#headdown #sub_menu #sub_item1 a::before {
+  content: "";
+  position: absolute;
+  background-color: #3f7fa1;
+  height: 3px; /*밑줄 굵기*/
+
+  width: 0; /*초기에 보이지 않도록*/
+  bottom: 0; /*a태그 아래에 위치시키기*/
+  transition: 0.7s; /*애니메이션 동작 실행 시간 정의*/
+
+  /*가상 요소를 가운데로 이동시키기*/
+  left: 17.5%;
+  transform: translateX(-50%);
+}
+#headdown #sub_menu #sub_item1 a:hover:before {
+  width: 60px;
+}
+#headdown #sub_menu #sub_item2 a::before {
+  content: "";
+  position: absolute;
+  background-color: #3f7fa1;
+  height: 3px; /*밑줄 굵기*/
+
+  width: 0; /*초기에 보이지 않도록*/
+  bottom: 0; /*a태그 아래에 위치시키기*/
+  transition: 0.7s; /*애니메이션 동작 실행 시간 정의*/
+
+  /*가상 요소를 가운데로 이동시키기*/
+  left: 27.5%;
+  transform: translateX(-50%);
+}
+#headdown #sub_menu #sub_item2 a:hover:before {
+  width: 100px;
+}
+#headdown #sub_menu #sub_item3 a::before {
+  content: "";
+  position: absolute;
+  background-color: #3f7fa1;
+  height: 3px; /*밑줄 굵기*/
+
+  width: 0; /*초기에 보이지 않도록*/
+  bottom: 0; /*a태그 아래에 위치시키기*/
+  transition: 0.7s; /*애니메이션 동작 실행 시간 정의*/
+
+  /*가상 요소를 가운데로 이동시키기*/
+  left: 38.2%;
+  transform: translateX(-50%);
+}
+#headdown #sub_menu #sub_item3 a:hover:before {
+  width: 65px;
+}
+
+#headdown #allcategory {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  font-weight: bold;
+}
+#headdown #allcategory div {
+  font-size: 15px;
+}
+#headdown #allcategory i {
+  padding: 10px;
+}
+#headdown #allcategory i.fa-bars {
+  font-size: 20px;
+}
+#headdown #allcategory + .displayNone1 {
+  width: 160px;
+  position: relative;
+  height: 340px;
+  z-index: 200;
+  background-color: rgb(249, 247, 247);
+  border-radius: 0 0 5px 5px;
+}
+#headdown #allcategory + .displayNone1 li {
+  padding: 8px 15px;
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+#headdown #allcategory + .displayNone1 li a {
+  display: flex;
+  padding-right: 5px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#headdown #allcategory + .displayNone1 li i {
+  display: none;
+}
+#headdown #allcategory + .displayNone1 li:hover i {
+  display: inline-block;
+}
+#headdown #allcategory + .displayNone1 li:hover:nth-child(n + 2) {
+  background-color: rgba(63, 127, 161, 0.1);
+}
+#headdown #allcategory + .displayNone1 > li:first-child {
+  font-size: 12px;
+  color: #999;
+  font-weight: 700;
+  padding: 4px 15px;
+}
+#headdown #allcategory + .displayNone1 {
+  display: none;
+}
+#headdown #allcategory:hover + .displayNone1 {
+  display: block;
+}
+#headdown #allcategory + .displayNone1:hover {
+  display: block;
+}
+
+#headdown #sub_menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  margin-right: 10px;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#headdown #pj {
+  position: absolute;
+  right: 20px;
+  font-size: 13px;
+  bottom: 15px;
+}
+
+/* SWIPER_AD */
+#swiper_ad {
+  height: 6000px;
+  margin-top: 120px;
 }
