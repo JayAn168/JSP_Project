@@ -18,14 +18,26 @@
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
       rel="stylesheet"
     />
-    <!-- css -->
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css?after" />
     <!-- 아이콘 -->
     <script
       src="https://kit.fontawesome.com/bd7db36e77.js"
       crossorigin="anonymous"
     ></script>
+    <!-- SWIPER -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- TYPING ANIMATION -->
+    <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css?after" />
+    <!-- JS -->
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -44,6 +56,7 @@
                   type="text"
                   name="search"
                   id="headSearch"
+                  autocomplete="off"
                   placeholder="서비스, 쉐프를 검색해 보세요!"
                 />
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -127,15 +140,17 @@
             <div id="sub_menu">
               <div id="sub_item1">
                 <a href="">프라임</a>
-                <div></div>
+                <div><b>TOP 2% 전문가</b>의 서비스를 만나보세요!</div>
               </div>
               <div id="sub_item2">
                 <a href="">엔터프라이즈</a>
-                <div></div>
+                <div>
+                  <b>기업 외주 ∙ 상주 ∙ 정부지원사업</b> 전용 솔루션입니다.
+                </div>
               </div>
               <div id="sub_item3">
                 <a href="">코드리뷰</a>
-                <div></div>
+                <div><b>내</b> <b>코</b>드 <b>좀</b> <b>봐</b>주세요!!</div>
               </div>
             </div>
             <div id="pj">
@@ -149,9 +164,89 @@
       </header>
       <!-- SWIPER_AD -->
       <section id="swiper_ad">
-        <div class="inner"></div>
+        <div class="inner">
+          <div id="search2">
+            <h1>
+              프리랜서 마켓 No.1 STT에서<br />
+              원하는 전문가를 찾아보세요!
+            </h1>
+            <form action="javascript:void(0)" method="post" name="searchForm">
+              <div id="typingAnimation">
+                <span id="gocoder_typing"></span>
+                <input
+                  name="search"
+                  id="hidden_search"
+                  role="search"
+                  maxlength="15"
+                  autocomplete="off"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  value=""
+                  onfocus="remove()"
+                  onblur="append()"
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </form>
+            <div id="hashtag">
+              <div class="hashtag"><a href="">#기획</a></div>
+              <div class="hashtag"><a href="">#커머스</a></div>
+              <div class="hashtag"><a href="">#데이터베이스</a></div>
+              <div class="hashtag"><a href="">#모바일</a></div>
+              <div class="hashtag"><a href="">#챗봇</a></div>
+            </div>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper mySwiper" id="bgc">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/swiper1.png" alt="" />
+                <p id="slide1"></p>
+                1
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper2.png" alt="" />
+                <p id="slide2"></p>
+                2
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper3.png" alt="" />
+                <p id="slide3"></p>
+                3
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper4.png" alt="" />
+                <p id="slide4"></p>
+                4
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper5.png" alt="" />
+                <p id="slide5"></p>
+                5
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper7.png" alt="" />
+                <p id="slide7"></p>
+                6
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/swiper6.jpeg" alt="" />
+                <p id="slide6"></p>
+                7
+              </div>
+            </div>
+            <div class="swiper-button-next" id="nextbtn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev" id="prevbtn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
       <!-- CATEGORY -->
+      <section id="category"></section>
       <!-- FAVORITE -->
       <!-- COUPON -->
       <!-- REQUEST_PROJECT -->
