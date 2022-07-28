@@ -25,44 +25,42 @@ header .inner #headup {
 }
 header .inner #headup ul {
   display: flex;
-  width: 270px;
-  align-items: flex-end;
+  width: 400px;
+  align-items: baseline;
   justify-content: space-around;
-  padding-right: 20px;
 }
 header .inner #headup ul li {
   font-weight: bold;
   color: #270949;
 }
-header .inner #headup ul li #msg {
+header .inner #headup ul li #reg {
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 14px;
   transition: all 0.5s;
 }
-header .inner #headup ul li #msg:hover {
+header .inner #headup ul li #reg:hover {
   background-color: rgba(39, 9, 73, 0.2);
 }
-header .inner #headup ul li #mypage {
-  font-size: 14px;
+header .inner #headup ul li #login {
   padding: 10px 20px;
-  padding-right: 30px;
   border-radius: 5px;
   transition: all 0.5s;
 }
-header .inner #headup ul li #mypage:hover {
+header .inner #headup ul li #login:hover {
   background-color: rgba(39, 9, 73, 0.2);
 }
 
-header .inner #headup ul li #me div img {
-  background-color: rgba(153, 153, 153, 0.4);
-  width: 36px;
-  border-radius: 50%;
-  height: 36px;
-  transition: 0.5s;
+header .inner #headup ul li #join {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #270949;
+  transition: all 0.5s;
 }
-header .inner #headup ul li #me div img:hover {
-  transform: scale(1.03, 1.03);
+header .inner #headup ul li #join:hover {
+  background-color: rgba(39, 9, 73, 0.2);
+  color: #3f7fa1;
 }
 
 header .inner > #headup > #logo > a > img {
@@ -71,7 +69,7 @@ header .inner > #headup > #logo > a > img {
 
 header .inner #headup #search {
   position: absolute;
-  right: 300px;
+  right: 400px;
 }
 
 header .inner #headup #search input::placeholder {
