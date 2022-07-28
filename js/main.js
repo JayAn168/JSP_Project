@@ -18,6 +18,9 @@ typewriter
   .typeString("어렵네요")
   .pauseFor(1000)
   .deleteAll()
+  .typeString("제 영혼을 갈아넣었습니다.")
+  .pauseFor(1000)
+  .deleteAll()
   .start();
 
 function remove() {
@@ -42,6 +45,9 @@ function append() {
     .pauseFor(1000)
     .deleteAll()
     .typeString("어렵네요")
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString("제 영혼을 갈아넣었습니다.")
     .pauseFor(1000)
     .deleteAll()
     .start();
