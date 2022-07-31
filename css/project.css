@@ -1,0 +1,98 @@
+#pjbanner {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+}
+#pjbanner .inner {
+  padding: 0 15px;
+}
+#pjbanner img {
+  width: 1170px;
+  height: 90px;
+}
+
+#pjbanner #pjlist {
+  height: 2527.72px;
+}
+#pjbanner #pjlist > p {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#pjbanner #pjlist #project_list {
+  display: flex;
+}
+
+#pjbanner #pjlist #project_list #left_menu {
+  width: 184px;
+  height: 2469.13px;
+  border-top: 2px solid #3f7fa1;
+}
+#pjbanner #pjlist #project_list #left_menu h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 24px 0 8px 0;
+  padding: 0 0 16px 0;
+  border-bottom: 1px solid #e4e5ed;
+}
+
+#pjbanner #pjlist #project_list #left_menu .main_category {
+  margin-bottom: 20px;
+}
+
+#pjbanner #pjlist #project_list #left_menu .main_category li div {
+  position: relative;
+  width: 184px;
+  display: flex;
+  align-items: center;
+}
+#pjbanner #pjlist #project_list #left_menu .main_category .answer {
+  display: none;
+}
+#pjbanner #pjlist #project_list #left_menu .main_category .answer li {
+  margin-top: 12px;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #270949;
+  cursor: pointer;
+}
+#pjbanner #pjlist #project_list #left_menu .main_category .answer li:hover {
+  text-decoration: underline #3f7fa1;
+}
+#pjbanner #pjlist #project_list #left_menu .main_category li div a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #270949;
+}
+#pjbanner #pjlist #project_list #left_menu .main_category li div a:hover {
+  text-decoration: underline #3f7fa1;
+}
+
+#pjbanner #pjlist #project_list #left_menu .fa-solid.fa-angle-down {
+  color: #270949;
+  position: absolute;
+  right: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+#pjbanner #pjlist #project_list #left_menu .fa-solid.fa-angle-down:hover {
+  color: #3f7fa1;
+}
+#pjbanner #pjlist #project_list #left_menu #pm {
+  margin-top: 50px;
+}
+#pjbanner #pjlist #project_list #left_menu label {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: #270949;
+}
+
+#pjbanner #pjlist #project_list #request_list {
+  width: 986px;
+  height: 2469.13px;
+  border: 1px solid salmon;
+}

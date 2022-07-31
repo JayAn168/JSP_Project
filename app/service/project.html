@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set the table</title>
+    <!-- 파비콘 -->
+    <link rel="icon" href="../../img/favicon.ico" />
+    <!-- 글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
+      rel="stylesheet"
+    />
+    <!-- 아이콘 -->
+    <script
+      src="https://kit.fontawesome.com/bd7db36e77.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/project.css" />
+    <!-- JS -->
+    <script defer src="../../js/project.js"></script>
+  </head>
+  <body>
+    <section id="pjbanner">
+      <div class="inner">
+        <img src="../../img/registerPJ.png" alt="" />
+      </div>
+      <div id="pjlist" class="inner">
+        <p>프로젝트 리스트</p>
+        <div id="project_list">
+          <div id="left_menu">
+            <h4>카테고리</h4>
+            <ul class="main_category">
+              <li>
+                <div>
+                  <a href="">IT·프로그래밍</a>
+                  <i class="fa-solid fa-angle-down question" id="que-1"></i>
+                </div>
+                <ul class="answer" id="ans-1">
+                  <a href=""><li>웹사이트 신규 제작</li></a>
+                  <a href=""><li>모바일앱 신규 제작</li></a>
+                  <a href=""> <li>프로그램 개발</li></a>
+                  <a href=""> <li>임베디드 시스템</li></a>
+                  <a href=""> <li>게임</li></a>
+                  <a href=""> <li>기획</li></a>
+                  <a href=""> <li>데이터 사이언스</li></a>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main_category">
+              <li>
+                <div>
+                  <a href="">디자인</a>
+                  <i class="fa-solid fa-angle-down question" id="que-2"> </i>
+                </div>
+                <ul class="answer" id="ans-2">
+                  <a href=""><li>로고디자인</li></a>
+                  <a href=""> <li>캘리그라피</li></a>
+                  <a href=""> <li>포토샵 편집</li></a>
+                  <a href=""><li>블로그·카페</li></a>
+                  <a href=""><li>앱 디자인</li></a>
+                  <a href=""><li>명함 디자인</li></a>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main_category">
+              <li>
+                <div>
+                  <a href="">영상·사진·음향</a>
+                  <i class="fa-solid fa-angle-down question" id="que-3"> </i>
+                </div>
+                <ul class="answer" id="ans-3">
+                  <li>영상제작</li>
+                  <li>사진촬영</li>
+                  <li>더빙·녹음</li>
+                  <li>음악·사운드</li>
+                  <li>엔터테이너</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main_category">
+              <li>
+                <div>
+                  <a href="">마케팅</a>
+                  <i class="fa-solid fa-angle-down question" id="que-4"> </i>
+                </div>
+                <ul class="answer" id="ans-4">
+                  <li>종합광고대행사</li>
+                  <li>체험단마케팅</li>
+                  <li>포털마케팅</li>
+                  <li>SNS 마케팅</li>
+                  <li>앱마케팅</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main_category">
+              <li>
+                <div>
+                  <a href="">번역·통역</a>
+                  <i class="fa-solid fa-angle-down question" id="que-5"> </i>
+                </div>
+                <ul class="answer" id="ans-5">
+                  <li></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main_category">
+              <li>
+                <div>
+                  <a href="">문서·글쓰기</a>
+                  <i class="fa-solid fa-angle-down question" id="que-6"> </i>
+                </div>
+                <ul class="answer" id="ans-6">
+                  <li></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main_category">
+              <li>
+                <div>
+                  <a href="">비즈니스컨설팅</a>
+                  <i class="fa-solid fa-angle-down question" id="que-7"> </i>
+                </div>
+                <ul class="answer" id="ans-7">
+                  <li></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main_category">
+              <li>
+                <div>
+                  <a href="">레슨·실무교육</a>
+                  <i class="fa-solid fa-angle-down question" id="que-8"> </i>
+                </div>
+                <ul class="answer" id="ans-8">
+                  <li></li>
+                </ul>
+              </li>
+            </ul>
+            <h4 id="pm">프로젝트 진행 방식</h4>
+            <form action="">
+              <div>
+                <label
+                  ><input type="checkbox" name="method" value="게임" />
+                  상주</label
+                >
+              </div>
+              <div>
+                <label
+                  ><input type="checkbox" name="method" value="그림" />
+                  외주</label
+                >
+              </div>
+            </form>
+          </div>
+          <div id="request_list">어차피 JSP하면 다 바꿔야해서 그때 할거임</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
