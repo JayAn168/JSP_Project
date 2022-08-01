@@ -36,10 +36,69 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/index.css?after" />
+    <link rel="stylesheet" href="./css/loginview.css" />
     <!-- JS -->
     <script defer src="./js/main.js"></script>
   </head>
   <body>
+    <!-- LOGINMODAL -->
+    <div class="modal">
+      <div class="modal_body">
+          <div class="left_img"></div>
+          <div class="right_login">
+              <button class="modal_close">×</button>
+              <div class="login">
+                  <form action="">
+                      <h2>로그인</h2>
+                      <div class="input_login">
+                          <div class="input_login2">
+                              <input type="text" class="input_id" name="userid" placeholder="아이디를 입력해 주세요.">
+                          </div>
+                      </div>
+                      <div class="input_login">
+                          <div class="input_login2">
+                              <input type="password" class="input_pw" name="userpw" placeholder="비밀번호를 입력해 주세요.">
+                          </div>
+                      </div>
+                      <div class="submit_login">
+                          <input role="button" type="submit" value="로그인" id="login">
+                      </div>
+                      <div class="logincheck">
+                          <p><input type="checkbox" name="로그인유지" id="login_keep"></p>
+                          <span>로그인 유지</span>
+                          <p><a href="" class="idpwlook">아이디•비밀번호 찾기</a></p>
+                      </div>
+                  </form>
+                  <div class="snslogin">
+                      <p>SNS계정으로 간편하게 로그인하세요.</p>
+                      <div class="snslog">
+                          <button class="kakao_naver">
+                              <img src="./img/kakao2.png" class="kakaoimg" alt=""><p>카카오 로그인</p>
+                          </button>
+                      </div>
+                      <div class="snslog">
+                          <button class="naver_kakao">
+                              <img src="./img/naver-icon-file.png" class="naverimg" alt=""><p>네이버 로그인</p>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="line">
+                  </div>
+                  <div class="join">
+                      <div class="join1">
+                          <p><strong>회원가입</strong>을 원하시면 가입 버튼을 눌러주세요.</p>
+                      </div>
+                      <div class="join2">
+                          <button class="join_button">
+                          Set The Table 회원가입 하기
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
     <!-- HEADER -->
     <div class="wrapper">
       <header>
@@ -70,7 +129,7 @@
               </li>
               <li>
                 <div id="login">
-                  <a href="javascript:void(0)">로그인</a>
+                  <a href="javascript:void(0)" class="btn-open-popup">로그인</a>
                 </div>
               </li>
               <li>
