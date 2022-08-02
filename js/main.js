@@ -111,8 +111,7 @@ const body = document.querySelector("body");
 btnOpenPopup.addEventListener("click", () => {
   modal.style.display = "block";
   modal.style.zIndex = "999";
-  body.style.overflow = "hidden";
-  body.style.height = "100%";
+  modal.style.position = "fixed";
 });
 
 const modalclose = document.querySelector(".modal_close");
