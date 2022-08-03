@@ -1,41 +1,42 @@
-* {
-  margin: 0 auto;
-}
-body {
-  font-family: "NanumSquare";
-}
-ul,
-li {
-  list-style: none;
-}
-ul {
+/* ul {
   float: left;
   margin-right: 50px;
   margin-left: 40px;
   font-size: 14.5px;
   font-weight: 900;
+} */
+#inbox1 {
+  display: flex;
+  justify-content: space-between;
 }
-li {
+#inbox1 ul {
+  margin-right: 50px;
+  margin-left: 40px;
+  font-style: 14.5px;
+  font-weight: bold;
+}
+#inbox1 ul li {
   font-size: 13.5px;
   font-weight: 700;
   padding-top: 12px;
   color: #999;
 }
-li a {
+#inbox1 ul li a {
   text-decoration: none;
   color: #666;
 }
-li a:hover {
+
+#inbox1 li a:hover {
   text-decoration: underline;
 }
-li input[type="button"] {
+#inbox1 li input[type="button"] {
   margin-top: 10px;
   padding: 8px 15px 8px 15px;
   border: solid 1px #333;
   font-size: 13px;
   color: #270949;
 }
-li input[type="button"]:hover {
+#inbox1 li input[type="button"]:hover {
   background-color: rgba(63, 127, 161, 0.1);
 }
 .foot_main2 {
@@ -47,14 +48,11 @@ li input[type="button"]:hover {
   margin-left: 0px;
   font-size: 16.5px;
 }
-.top {
+.footer_top {
   padding-top: 20px;
 }
-#bold a {
+#inbox .foot_main2 #bold a {
   color: #111;
-}
-#wrap {
-  height: 500px;
 }
 #footer {
   height: 480px;
