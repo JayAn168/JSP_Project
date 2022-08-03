@@ -145,18 +145,20 @@
 .modal_body .right_login .login .logincheck span {
   margin-bottom: 2px;
   margin-right: 110px;
+  font-size: 14px;
 }
 
 /* 아이디•비밀번호 찾기 */
 .modal_body .right_login .login .logincheck .idpwlook:hover {
-  color: pink;
   /* color: rgb(85, 89, 105); */
+  color: rgb(39, 9, 73);
 }
 
 .modal_body .right_login .login .logincheck .idpwlook {
   margin-bottom: 2px;
   text-decoration: none;
   color: rgb(85, 89, 105);
+  font-size: 14px;
 }
 
 /* SNS 로그인 */
