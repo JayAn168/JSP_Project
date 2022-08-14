@@ -103,25 +103,3 @@ swiper.on("slideChange", function () {
     bgc.style.backgroundColor = "rgb(55, 17, 108)";
   }
 });
-
-const modal = document.querySelector(".modal");
-const btnOpenPopup = document.querySelector(".btn-open-popup");
-const body = document.querySelector("body");
-
-btnOpenPopup.addEventListener("click", () => {
-  modal.style.display = "block";
-  modal.style.zIndex = "999";
-  modal.style.position = "fixed";
-});
-
-const modalclose = document.querySelector(".modal_close");
-
-modalclose.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-// 모달 on
-body.style.overflow = "hidden";
-
-// 모달 off
-body.style.overflow = "auto";
